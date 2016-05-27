@@ -1,0 +1,120 @@
+*{margin: 0;padding: 0;}
+body,html{height: 100%;background-color: #FCFCF3}
+/*===================Map=======================*/
+.allcontain{width: 100%;height: 100%;position: relative;margin: 0 auto;max-width: 640px;}
+.map_contain{width: 100%;height: 100%;position: relative;background-image: url(../images/map_back.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
+.line_map{position: absolute;left: 9.33333%;top: 22.5555%;width: 78.6%;height: 52.47%;background-image: url(../images/line_map.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
+.pedal_to_sit{width: 26.666%;height: 7.5%;left: 59.3%;top:14.5%;position: absolute;background-image: url(../images/xidi.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
+.transition_pd{width: 26.666%;height: 7.5%;left: 12.8%;top:29%;position: absolute;background-image: url(../images/guodu.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
+.chuizu_to_sit{width: 26.666%;height: 7.5%;left: 50.3%;top:49.4%;position: absolute;background-image: url(../images/chuizu.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
+.golden_age{width: 26.666%;height: 7.5%;left: 21.3%;top:63.4%;position: absolute;background-image: url(../images/dingshen.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
+.laba{width: 8.5%;right: 2.6%;top:2.3%;position: absolute;background-image: url(../images/laba_close.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
+.map_open{width: 8.5%;left: 2.6%;top:2.3%;position: absolute;background-image: url(../images/juanzhou.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
+.layer_map{width: 100%;height: 100%;position: absolute;top: 0;left: 0;background-color: rgba(0,0,0,.7);display: none;}
+.juanzhou_text{position: fixed;display: block;left: 50%;width: 95%;top: 50%;-webkit-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%);transform: translate(-50%,-50%);}
+/*===================hanchao=======================*/
+.back_top{width: 100%;height: 55%;background-image: url(../images/hanchao_top_back.gif);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
+.contain_bottom{width: 100%;height: 45%;position: relative;box-sizing: border-box;-webkit-box-sizing:border-box;background-color: #FBF5ED;}
+.dynasty_text{width:90%;position: absolute;left: 50%;top: 50%;-webkit-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%);transform: translate(-50%,-50%);margin-bottom: 35px;}
+.hanchao_title{width:20%;position: absolute;left: 50%;top: 5%;-webkit-transform: translate(-50%,0);-ms-transform: translate(-50%,0);-o-transform: translate(-50%,0);transform: translate(-50%,0);margin-bottom: 35px;}
+.hanchao_layer{position: absolute;right: 8%;top: 12%;width: 20%;display: none;}
+/*===================weijing=======================*/
+.wj_title{width:40%;position: absolute;left: 50%;top: 10%;-webkit-transform: translate(-50%,0);-ms-transform: translate(-50%,0);-o-transform: translate(-50%,0);transform: translate(-50%,0);margin-bottom: 35px;}
+.back_top_wj{width: 100%;height: 55%;background-image: url(../images/weijin_top_back.gif);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
+.left_button{position: absolute;bottom: 5%;left: 5%;width: 10%;}
+.right_button{position: absolute;bottom: 5%;right: 5%;width: 10%;}
+/*===================mingqing=======================*/
+.back_top_mq{width: 100%;height: 55%;background-image: url(../images/mq_top_back.gif);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
+.mq_title{width:30%;position: absolute;left: 50%;top: 10%;-webkit-transform: translate(-50%,0);-ms-transform: translate(-50%,0);-o-transform: translate(-50%,0);transform: translate(-50%,0);margin-bottom: 35px;}
+/*===================song=======================*/
+.back_top_song{width: 100%;height: 55%;background-image: url(../images/song_top_back.gif);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
+/*===================家具=======================*/
+.layer_back_img{max-width: 15px;font-size: 12px;padding: 5px;text-align: center;background-color: #191718;color: white;background-image: url(../images/bj_back.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
+.layer{background-color: rgba(0,0,0,.8);width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index: 100;}
+/*===================官帽椅=======================*/
+.guanmao_contain{position: relative;width: 70%;height:50%;left: 50%;top:50%;position: absolute;background-image: url(../images/guanmao.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;-webkit-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%);transform: translate(-50%,-50%);}
+.danao{width: 90%;height: 10%;z-index: 100;position: absolute;}
+.bottom_contain_gm .tt_gm{width: 17%;top: 55%;}
+.text1_gm{position: absolute;display: block;right: 10%;top: 30%;width: 4%;}
+.text2_gm{position: absolute;display: block;right: 18%;top: 30%;width: 4%;}
+.text3_gm{position: absolute;display: block;right: 26%;top: 30%;width: 16%;}
+.top_contain_gm{position: relative;width: 100%;height: 63%;background-image: url(../images/gm_top.gif);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
+.bottom_contain_gm{width: 100%;height: 37%;position: relative;}
+.kaobenban{width: 30%;height: 40%;z-index: 100;position: absolute;left: 50%;top: 10%;-webkit-transform: translate(-50%,0);-ms-transform: translate(-50%,0);-o-transform: translate(-50%,0);transform: translate(-50%,0);}
+.lbg_left{width: 14%;height: 13%;z-index: 100;position: absolute;left: 0%;top: 25%;}
+.lbg_right{width: 14%;height: 13%;z-index: 100;position: absolute;right: 0%;top: 25%;}
+.fushou_right{width: 10%;height: 15%;z-index: 100;position: absolute;right: 8%;top: 37%;}
+.fushou_left{width: 10%;height: 15%;z-index: 100;position: absolute;left: 8%;top: 37%;}
+.yatiao{width: 70%;height: 15%;z-index: 100;position: absolute;left: 50%;top: 67%;-webkit-transform: translate(-50%,0);-ms-transform: translate(-50%,0);-o-transform: translate(-50%,0);transform: translate(-50%,0);}
+.leg_right{width: 10%;height: 37%;z-index: 100;position: absolute;right: 2%;top: 63%;}
+.leg_left{width: 10%;height: 37%;z-index: 100;position: absolute;left: 2%;top: 63%;}
+.danao_text{position: absolute;left: 12%;top: 25%;display: none;}
+.fushou_left_text{position: absolute;left: 7%;top: 35%;display: none;}
+.fushou_right_text{position: absolute;right: 7%;top: 35%;display: none;}
+.lbg_left_text{position: absolute;left: 14%;top: 45%;display: none;}
+.lbg_right_text{position: absolute;right:14%;top: 45%;display: none;}
+.yatiao_text{position: absolute;left: 27%;top: 56%;display: none;}
+.yatiao_text{position: absolute;left: 27%;top: 56%;display: none;}
+.leg_left_text{position: absolute;left: 7%;top: 66%;display: none;}
+.leg_right_text{position: absolute;right: 7%;top: 66%;display: none;}
+.kaobenban_text{position: absolute;left: 40%;top: 35%;display: none;}
+.top_contain_gm .qt_gm{left: 35%;height: 58%;bottom: 10%;width: 40%}
+/*===================胡床=======================*/
+.huchuang_contain{position: relative;width: 70%;height:35%;left: 50%;top:50%;position: absolute;background-image: url(../images/huchuang.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;-webkit-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%);transform: translate(-50%,-50%);}
+.zuoban{width: 78%;height: 20%;z-index: 100;position: absolute;left: 10%}
+.huyan{width: 10%;height: 90%;z-index: 100;position: absolute;left: 32%;top: 10%;-webkit-transform: rotate(-30deg);-ms-transform: rotate(-30deg);-o-transform: rotate(-30deg);transform: rotate(-30deg);}
+.tachuang{width: 42%;height: 4%;z-index: 100;position: absolute;right:9%;top: 69%;-webkit-transform: skewX(40deg) rotate(-15deg);-ms-transform: skewX(40deg) rotate(-15deg);-o-transform: skewX(40deg) rotate(-15deg);transform: skewX(40deg) rotate(-15deg);}
+.yazi{width: 35%;height: 4%;z-index: 100;position: absolute;right:9%;top: 73%;-webkit-transform: skewY(-19deg);-ms-transform: skewY(-19deg);-o-transform: skewY(-19deg);transform: skewY(-19deg);}
+.zuoban_text{position: absolute;left: 45%;top: 25%;display: none;}
+.yazi_text{position: absolute;right: 15%;top: 55%;display: none;}
+.tachuang_text{position: absolute;right: 25%;top: 48%;display: none;}
+.huyan_text{position: absolute;left: 25%;top: 48%;display: none;}
+.hc_contain .hc_top{position: relative;width: 100%;height: 63%;background-image: url(../images/hc_top.gif);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
+/*===================翘头案=======================*/
+.qiaotouya_contain{background-image: url(../images/chinese.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
+.top_contain{position: relative;width: 100%;height: 63%;background-image: url(../images/qt_top_back.gif);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
+.title_log{z-index: 19911117;box-shadow: 0px 0px 0px 5px #D26A52;border: 1px solid #F0A437;border-radius: 0 0px 10px 10px;width: 35%;padding: 2% 0;text-align: center;color: #FDDEC8;background-color: #D26A52;position: absolute;left: 50%;top: 0; -webkit-transform: translate(-50%,0);-ms-transform: translate(-50%,0);-o-transform: translate(-50%,0);transform: translate(-50%,0);}
+.text1{position: absolute;display: block;right: 10%;top: 30%;width: 5%;}
+.text2{position: absolute;display: block;right: 18%;top: 30%;width: 5%;}
+.text3{position: absolute;display: block;right: 26%;top: 30%;width: 15%;}
+.dotted{width: 100%;border-bottom: 2px dotted #E68840;height: 6%;}
+.bottom_contain{width: 100%;height: 37%;position: relative;}
+.qt_button{width: 50%;height: 35%;position: absolute;bottom: 0;left: 50%;-webkit-transform: translate(-50%,0);-ms-transform: translate(-50%,0);-o-transform: translate(-50%,0);transform: translate(-50%,0);}
+.tuteng{display: block;position: absolute;width: 30%;left: 20%;top: 58%;-webkit-transform: translate(0,-50%);-ms-transform: translate(0,-50%);-o-transform: translate(0,-50%);transform: translate(0,-50%);}
+.qiaotou_contain{position: relative;width: 70%;height:35%;left: 50%;top:50%;position: absolute;background-image: url(../images/qiaotou.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;-webkit-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%);transform: translate(-50%,-50%);}
+.left_qiaotou{width: 13%;height: 14%;z-index: 100;position: absolute;left: 0%}
+.right_qiaotou{width: 13%;height: 14%;z-index: 100;position: absolute;right: 0%}
+.left_yatou{width: 12%;height: 17%;z-index: 100;position: absolute;left: 0%;top: 39%;}
+.right_yatou{width: 12%;height: 17%;z-index: 100;position: absolute;left: 25%;top: 39%;}
+.left_yatou_r{width: 12%;height: 17%;z-index: 100;position: absolute;right: 0%;top: 39%;}
+.right_yatou_r{width: 12%;height: 17%;z-index: 100;position: absolute;right: 25%;top: 39%;}
+.left_leg{width: 10%;height: 62%;z-index: 100;position: absolute;left: 13%;top: 37%;}
+.right_leg{width: 10%;height: 62%;z-index: 100;position: absolute;right: 13%;top: 37%;}
+.right_qiaotou_text{position: absolute;right: 5%;top: 30%;display: none;}
+.left_qiaotou_text{position: absolute;left: 5%;top: 30%;display: none;}
+.right_yatou_text{position: absolute;left: 42%;top: 45%;display: none;}
+.left_yatou_text{position: absolute;left: 7%;top: 45%;display: none;}
+.left_yatou_r_text{position: absolute;right: 42%;top: 45%;display: none;}
+.right_yatou_r_text{position: absolute;right: 7%;top: 45%;display: none;}
+.right_leg_text_yt{position: absolute;right: 15%;top: 55%;display: none;}
+.left_leg_text_yt{position: absolute;left: 15%;top: 55%;display: none;}
+
+/*===================圈椅=======================*/
+.quanyi_top{position: relative;width: 100%;height: 63%;background-image: url(../images/quanyi_top.gif);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
+.quanyi_contain{position: relative;width: 70%;height:35%;left: 50%;top:50%;position: absolute;background-image: url(../images/quanyi.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;-webkit-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%);transform: translate(-50%,-50%);}
+.yiquan{width: 100%;height: 39%;z-index: 100;position: absolute;left: 0%}
+.quanyi_lbg_left{width: 10%;height: 15%;z-index: 100;position: absolute;left: 6%;top: 38%;}
+.quanyi_lbg_right{width: 10%;height: 15%;z-index: 100;position: absolute;right: 6%;top: 38%;}
+.kaobei{width: 25%;height: 45%;z-index: 1000;position: absolute;left: 50%;top: 30%;-webkit-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%);transform: translate(-50%,-50%);}
+.quanyi_zuoban{width: 90%;height: 10%;z-index: 1000;position: absolute;left: 5%;top: 53%;}
+.yitui{width: 92%;height: 35%;z-index: 1000;position: absolute;left: 3%;top: 68%;}
+.yiquan_text{position: absolute;left: 6%;top: 35%;display: none;}
+.quanyi_lbg_left_text{position: absolute;left: 8%;top: 45%;display:none ;}
+.quanyi_lbg_right_text{position: absolute;right: 8%;top: 45%;display:none ;}
+.yitui_text{position: absolute;left: 8%;top: 60%;display: none;}
+.quanyi_zuoban_text{position: absolute;left: 28%;top: 45%;display: none;}
+.kaobei_text{position: absolute;left: 33%;top: 35%;display: none;}
+.quanyi_top .qt_qy{left: 33%;height: 60%;width: 40%;}
+/*===================loading=======================*/
+.loading_tap{width: 70%;display: inline-block;margin-top: 20%;margin-bottom: 25px;}
+.progress_bar{width: 100%;display: inline-block;}

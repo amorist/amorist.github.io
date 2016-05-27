@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>翘头案</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="./css/layout.css">
+<script type="text/javascript" src="./js/jquery.js"></script>
+<style type="text/css">
+</style>
+</head>
+<body>
+<div class="allcontain qiaotouya_contain">
+<div class="top_contain">
+	<div class="title_log">翘头案</div>
+	<div class="dotted"></div>
+	<div class="qt_button"></div>
+</div>
+<div class="bottom_contain">
+	<img src="./images/tuteng.png" alt="" class="tuteng">
+	<img src="./images/text1.png" alt="" class="text1">
+	<img src="./images/text2.png" alt="" class="text2">
+	<img src="./images/text3.png" alt="" class="text3">
+	<img src="./images/left_button.png" alt="" class="left_button">
+		<img src="./images/right_button.png" alt="" class="right_button">
+</div>
+<div class="layer" style="display:none;">
+	<div class="qiaotou_contain">
+	    <div class="right_qiaotou"></div>
+	    <div class="left_qiaotou"></div>
+	    <div class="right_yatou"></div>
+	    <div class="left_yatou"></div>
+	    <div class="left_yatou_r"></div>
+	    <div class="right_yatou_r"></div>
+	    <div class="left_leg"></div>
+	    <div class="right_leg"></div>
+	</div>
+	<div class="right_qiaotou_text layer_back_img" id="right_qiaotou_text">右翘头</div>
+	<div class="left_qiaotou_text layer_back_img" id="left_qiaotou_text">左翘头</div>
+	<div class="right_yatou_text layer_back_img" id="right_yatou_text">右牙头</div>
+	<div class="left_yatou_text layer_back_img" id="left_yatou_text">左牙头</div>
+	<div class="left_yatou_r_text layer_back_img" id="left_yatou_r_text">左牙头</div>
+	<div class="right_yatou_r_text layer_back_img" id="right_yatou_r_text">右牙头</div>
+	<div class="right_leg_text_yt layer_back_img" id="right_leg_text">右腿</div>
+	<div class="left_leg_text_yt layer_back_img" id="left_leg_text">左腿</div>
+</div>
+</div>
+	<script type="text/javascript">
+	$(function(){
+		$(".right_qiaotou").click(function(event) {
+			$("#right_qiaotou_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".left_qiaotou").click(function(event) {
+			$("#left_qiaotou_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".right_yatou").click(function(event) {
+			$("#right_yatou_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".left_yatou").click(function(event) {
+			$("#left_yatou_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".right_yatou_r").click(function(event) {
+			$("#left_yatou_r_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".left_yatou_r").click(function(event) {
+			$("#right_yatou_r_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".left_leg").click(function(event) {
+			$("#left_leg_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".right_leg").click(function(event) {
+			$("#right_leg_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".qt_button").click(function(event) {
+			$(".layer").fadeIn();
+			$("#quanyi_contain").nextAll().hide();
+			event.stopPropagation();
+		});
+		$(".qiaotou_contain").click(function(event) {
+			event.stopPropagation();
+		});
+		$(".layer").click(function(event) {
+			$(this).fadeOut();
+		});
+		$(".right_button").click(function(event) {
+			window.location.href="hc_next_jj.html";
+		});
+		$(".left_button").click(function(event) {
+			window.location.href="hanchao.html";
+		});
+	})
+	</script>
+</body>
+</html>

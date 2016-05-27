@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>官帽椅</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="./css/layout.css">
+<script type="text/javascript" src="./js/jquery.js"></script>
+<style type="text/css">
+</style>
+</head>
+<body>
+<div class="allcontain qiaotouya_contain">
+<div class="top_contain_gm">
+	<div class="title_log">官帽椅</div>
+	<div class="dotted"></div>
+	<div class="qt_button qt_gm"></div>
+</div>
+<div class="bottom_contain_gm">
+	<img src="./images/tuteng_gm.png" alt="" class="tuteng tt_gm">
+	<img src="./images/text1_gm.png" alt="" class="text1_gm">
+	<img src="./images/text2_gm.png" alt="" class="text2_gm">
+	<img src="./images/text3_gm.png" alt="" class="text3_gm">
+	<img src="./images/left_button.png" alt="" class="left_button">
+	<img src="./images/right_button.png" alt="" class="right_button">
+</div>
+<div class="layer" style="display:none;">
+	<div class="guanmao_contain">
+		<div class="danao"></div>
+		<div class="kaobenban"></div>
+		<div class="lbg_left"></div>
+		<div class="lbg_right"></div>
+		<div class="yatiao"></div>
+		<div class="fushou_left"></div>
+		<div class="fushou_right"></div>
+		<div class="leg_left"></div>
+		<div class="leg_right"></div>
+	</div>
+		<div class="danao_text layer_back_img">搭脑</div>
+		<div class="kaobenban_text layer_back_img">靠背板</div>
+		<div class="lbg_left_text layer_back_img">联帮棍左</div>
+		<div class="lbg_right_text layer_back_img">联帮棍右</div>
+		<div class="yatiao_text layer_back_img">牙条</div>
+		<div class="fushou_left_text layer_back_img">左扶手</div>
+		<div class="fushou_right_text layer_back_img">右扶手</div>
+		<div class="leg_left_text layer_back_img">左腿</div>
+		<div class="leg_right_text layer_back_img">右腿</div>
+</div>
+</div>
+	<script type="text/javascript">
+	$(function(){
+		$(".danao").click(function(event) {
+			$(".danao_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".kaobenban").click(function(event) {
+			$(".kaobenban_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".lbg_left").click(function(event) {
+			$(".fushou_left_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".lbg_right").click(function(event) {
+			$(".fushou_right_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".yatiao").click(function(event) {
+			$(".yatiao_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".fushou_left").click(function(event) {
+			$(".lbg_left_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".fushou_right").click(function(event) {
+			$(".lbg_right_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".leg_left").click(function(event) {
+			$(".leg_left_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".leg_right").click(function(event) {
+			$(".leg_right_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".qt_button").click(function(event) {
+			$(".layer").fadeIn();
+			$("#quanyi_contain").nextAll().hide();
+			event.stopPropagation();
+		});
+		$(".guanmao_contain").click(function(event) {
+			event.stopPropagation();
+		});
+		$(".layer").click(function(event) {
+			$(this).fadeOut();
+		});
+		$(".left_button").click(function(event) {
+			window.location.href="mqing.html";
+		});
+		$(".right_button").click(function(event) {
+			window.location.href="mq_next.html";
+		});
+	})
+	</script>
+</body>
+</html>

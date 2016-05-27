@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>地图</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="./css/layout.css">
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+<div class="map_contain" style="background-color:#FDF7ED">
+    <div class="map_open"></div>
+    <div class="laba"></div>
+    <div class="line_map"></div>
+    <div class="pedal_to_sit"></div>
+    <div class="transition_pd "></div>
+    <div class="chuizu_to_sit "></div>
+    <div class="golden_age "></div>
+    <div class="layer_map">
+        <img src="./images/juanzhou_text.png" alt="" class="juanzhou_text">
+    </div>
+</div>
+<script type="text/javascript" src="./js/map.js"></script>
+<script type="text/javascript">
+    var audio = parent.document.getElementById('mp3Btn');
+    //	 var audio=$(window.parent.document).find('#mp3Btn');
+    console.log(audio);
+    audio.play();
+    $('.laba').click(function (event) {
+        //防止冒泡
+        event.stopPropagation();
+        if (audio.paused) //如果当前是播放状态
+        {
+            audio.play()
+            $(this).css("background-image", "url(./images/laba_close.png)");
+            return;
+        } else {
+            audio.pause()
+            $(this).css("background-image", "url(./images/laba_open.png)")
+        }
+    });
+</script>
+</body>
+</html>

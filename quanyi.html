@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>圈椅</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="./css/layout.css">
+<script type="text/javascript" src="./js/jquery.js"></script>
+<style type="text/css">
+</style>
+</head>
+<body>
+<div class="allcontain qiaotouya_contain">
+<div class="top_contain_gm quanyi_top">
+	<div class="title_log">圈椅</div>
+	<div class="dotted"></div>
+	<div class="qt_button qt_qy"></div>
+</div>
+<div class="bottom_contain_gm">
+	<img src="./images/tuteng_qy.png" alt="" class="tuteng tt_gm">
+	<img src="./images/text1_qy.png" alt="" class="text1_gm">
+	<img src="./images/text2_qy.png" alt="" class="text2_gm">
+	<img src="./images/text3_qy.png" alt="" class="text3_gm">
+	<img src="./images/left_button.png" alt="" class="left_button">
+	<img src="./images/right_button.png" alt="" class="right_button">
+</div>
+<div class="layer" style="display:none;">
+	<div class="quanyi_contain" id="quanyi_contain">
+	 <div class="yiquan"></div>
+	 <div class="yitui"></div>
+	 <div class="quanyi_zuoban"></div>
+	 <div class="quanyi_lbg_right"></div>
+	 <div class="quanyi_lbg_left"></div>
+	 <div class="kaobei"></div>
+	</div>
+	<div class="yiquan_text layer_back_img" id="yiquan_text">椅圈</div>
+	<div class="yitui_text layer_back_img" id="yitui_text">椅腿</div>
+	<div class="quanyi_lbg_left_text layer_back_img" id="quanyi_lbg_left_text">联邦棍左</div>
+	<div class="quanyi_lbg_right_text layer_back_img" id="quanyi_lbg_right_text">联邦棍右</div>
+	<div class="quanyi_zuoban_text layer_back_img" id="quanyi_zuoban_text">坐板</div>
+	<div class="kaobei_text layer_back_img" id="kaobei_text">靠背</div>
+</div>
+</div>
+	<script type="text/javascript">
+	$(function(){
+		$(".yiquan").click(function(event) {
+			$("#yiquan_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".quanyi_lbg_left").click(function(event) {
+			$("#quanyi_lbg_left_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".quanyi_lbg_right").click(function(event) {
+			$("#quanyi_lbg_right_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".yitui").click(function(event) {
+			$("#yitui_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".quanyi_zuoban").click(function(event) {
+			$("#quanyi_zuoban_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".kaobei").click(function(event) {
+			$("#kaobei_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".qt_button").click(function(event) {
+			$(".layer").fadeIn();
+			$("#quanyi_contain").nextAll().hide();
+			event.stopPropagation();
+		});
+		$(".layer").click(function(event) {
+			$(this).fadeOut();
+		});
+		$(".quanyi_contain").click(function(event) {
+			event.stopPropagation();
+		});
+		$(".right_button").click(function(event) {
+			window.location.href="song_next.html";
+		});
+		$(".left_button").click(function(event) {
+			window.location.href="mqing.html";
+		});
+	})
+	</script>
+</body>
+</html>

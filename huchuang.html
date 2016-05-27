@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>胡床</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="./css/layout.css">
+<script type="text/javascript" src="./js/jquery.js"></script>
+<style type="text/css">
+</style>
+</head>
+<body>
+<div class="allcontain qiaotouya_contain hc_contain">
+<div class="top_contain_gm hc_top">
+	<div class="title_log">胡床</div>
+	<div class="dotted"></div>
+	<div class="qt_button qt_gm"></div>
+</div>
+<div class="bottom_contain_gm">
+	<img src="./images/tuteng_hc.png" alt="" class="tuteng tt_gm">
+	<img src="./images/text1_hc.png" alt="" class="text1_gm">
+	<img src="./images/text2_hc.png" alt="" class="text2_gm">
+	<img src="./images/text3_hc.png" alt="" class="text3_gm">
+	<img src="./images/left_button.png" alt="" class="left_button">
+	<img src="./images/right_button.png" alt="" class="right_button">
+</div>
+<div class="layer" style="display:none;">
+	<div class="huchuang_contain">
+	    <div class="zuoban"></div>
+	    <div class="yazi"></div>
+	    <div class="tachuang"></div>
+	    <div class="huyan"></div>
+	</div>
+	    <div class="zuoban_text layer_back_img">坐板</div>
+	    <div class="yazi_text layer_back_img">牙子</div>
+	    <div class="tachuang_text layer_back_img">踏床</div>
+	    <div class="huyan_text layer_back_img">护眼线</div>
+</div>
+</div>
+	<script type="text/javascript">
+	$(function(){
+		$(".zuoban").click(function(event) {
+			$(".zuoban_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".yazi").click(function(event) {
+			$(".yazi_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".tachuang").click(function(event) {
+			$(".tachuang_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".huyan").click(function(event) {
+			$(".huyan_text").fadeToggle();
+			event.stopPropagation();
+		});
+		$(".qt_button").click(function(event) {
+			$(".layer").fadeIn();
+			$("#quanyi_contain").nextAll().hide();
+			event.stopPropagation();
+		});
+		$(".huchuang_contain").click(function(event) {
+			event.stopPropagation();
+		});
+		$(".layer").click(function(event) {
+			$(this).fadeOut();
+		});
+		$(".right_button").click(function(event) {
+			window.location.href="wj_next_jj.html";
+		});
+		$(".left_button").click(function(event) {
+			window.location.href="wjin.html";
+		});
+	})
+	</script>
+</body>
+</html>

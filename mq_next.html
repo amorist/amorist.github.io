@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>loading</title>
+<title>魏晋</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -11,18 +11,21 @@
 <link rel="stylesheet" type="text/css" href="./css/layout.css">
 <script type="text/javascript" src="./js/jquery.js"></script>
 <style type="text/css">
-	
+	.allcontain{background-image: url(./images/mqing_nex.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
 </style>
 </head>
 <body>
-<div class="allcontain" style="background-color:#FEF5EE;text-align: center;">
-	<img src="./images/loading_tap.gif" alt="" class="loading_tap">
-	<img src="./images/progress_bar.gif" alt="" class="progress_bar">
+<div class="allcontain">
+<img src="./images/left_button.png" alt="" class="left_button" style="bottom:2%;">
 </div>
-<script type="text/javascript">
-	var x=setTimeout(function(){
-		window.location.href="logo.html";
-	},8000);
-</script>
+	<script type="text/javascript" src="./js/dynasty.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$(".left_button").click(function(){
+			window.location.href="map.html";
+		})
+	})
+
+	</script>
 </body>
 </html>

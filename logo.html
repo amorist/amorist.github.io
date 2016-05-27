@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>loading</title>
+<title>logo</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -11,18 +11,21 @@
 <link rel="stylesheet" type="text/css" href="./css/layout.css">
 <script type="text/javascript" src="./js/jquery.js"></script>
 <style type="text/css">
-	
+	.allcontain{background-image: url(./images/logo_back.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
+	.logo_text{position: absolute;left: 50%;top: 45%;-webkit-transform: translate(-50%,0);
+	-ms-transform: translate(-50%,0);
+	-o-transform: translate(-50%,0);
+	transform: translate(-50%,0);width: 70%;}
 </style>
 </head>
 <body>
-<div class="allcontain" style="background-color:#FEF5EE;text-align: center;">
-	<img src="./images/loading_tap.gif" alt="" class="loading_tap">
-	<img src="./images/progress_bar.gif" alt="" class="progress_bar">
+<div class="allcontain">
+	<img src="./images/logo_text.png" alt="" class="logo_text">
 </div>
 <script type="text/javascript">
-	var x=setTimeout(function(){
-		window.location.href="logo.html";
-	},8000);
+	$(".allcontain").click(function(event) {
+		window.location.href="all.html";
+	});
 </script>
 </body>
 </html>
