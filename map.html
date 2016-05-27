@@ -38,11 +38,11 @@
         if (audio.paused) //如果当前是播放状态
         {
             audio.play()
-            $(this).css("background-image", "url(./images/laba_close.png)");
+            $(this).css("background-image", "url(./images/laba_open.png)");
             return;
         } else {
             audio.pause()
-            $(this).css("background-image", "url(./images/laba_open.png)")
+            $(this).css("background-image", "url(./images/laba_close.png)")
         }
     });
 </script>
