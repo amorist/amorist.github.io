@@ -15,7 +15,7 @@ body,html{height: 100%;background-color: #FCFCF3}
 /*===================hanchao=======================*/
 .back_top{width: 100%;height: 55%;background-image: url(../images/hanchao_top_back.gif);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
 .contain_bottom{width: 100%;height: 45%;position: relative;box-sizing: border-box;-webkit-box-sizing:border-box;background-color: #FBF5ED;}
-.dynasty_text{width:90%;position: absolute;left: 50%;top: 50%;-webkit-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%);transform: translate(-50%,-50%);margin-bottom: 35px;}
+.dynasty_text{width:77%;position: absolute;left: 50%;top: 50%;-webkit-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%);transform: translate(-50%,-50%);margin-bottom: 35px;}
 .hanchao_title{width:20%;position: absolute;left: 50%;top: 5%;-webkit-transform: translate(-50%,0);-ms-transform: translate(-50%,0);-o-transform: translate(-50%,0);transform: translate(-50%,0);margin-bottom: 35px;}
 .hanchao_layer{position: absolute;right: 8%;top: 12%;width: 20%;display: none;}
 /*===================weijing=======================*/
