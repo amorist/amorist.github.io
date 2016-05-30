@@ -1,9 +1,9 @@
 $(function(){
-			function init(){
-				var x=$(".laba").width();
-			$(".laba,.map_open").height(x*1.4);
-			}
-			init();
+			// function init(){
+			// 	var x=$(".laba").width();
+			// $(".laba,.map_open").height(x*1.4);
+			// }
+			// init();
 			$(".map_open").click(function(){
 				$(".layer_map").fadeIn();
 			});
@@ -22,7 +22,7 @@ $(function(){
 			$(".golden_age").click(function(){
 				window.location.href="mqing.html";
 			})
-			$(window).resize(function(){
-				init();
-			})
+			// $(window).resize(function(){
+			// 	init();
+			// })
 		})
