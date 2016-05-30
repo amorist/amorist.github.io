@@ -1,7 +1,7 @@
 $(function(){
 			function init(){
 				var x=$(".laba").width();
-			$(".laba,.map_open").height(x);
+			$(".laba,.map_open").height(x*1.4);
 			}
 			init();
 			$(".map_open").click(function(){
