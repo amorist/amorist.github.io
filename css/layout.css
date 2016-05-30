@@ -9,7 +9,7 @@ body,html{height: 100%;background-color: #FCFCF3}
 .chuizu_to_sit{width: 26.666%;height: 7.5%;left: 50.3%;top:49.4%;position: absolute;background-image: url(../images/chuizu.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
 .golden_age{width: 26.666%;height: 7.5%;left: 21.3%;top:63.4%;position: absolute;background-image: url(../images/dingshen.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
 .laba{width: 40px;height: 61.874px;right: 2.6%;top:2.3%;position: absolute;background-image: url(../images/laba_close.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
-.map_open{width: 41.8px;height: 61px;left: 2.6%;top:2.3%;position: absolute;background-image: url(../images/juanzhou.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
+.map_open{width: 41.8px;height: 57px;left: 2.6%;top:2.3%;position: absolute;background-image: url(../images/juanzhou.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
 .layer_map{width: 100%;height: 100%;position: absolute;left: 0;top: 0;background-color: rgba(0,0,0,.7);z-index: 100;}
 .juanzhou_text{position: fixed;display: block;left: 50%;width: 95%;top: 50%;-webkit-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%);transform: translate(-50%,-50%);}
 /*===================hanchao=======================*/
