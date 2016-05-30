@@ -10,7 +10,7 @@ body,html{height: 100%;background-color: #FCFCF3}
 .golden_age{width: 26.666%;height: 7.5%;left: 21.3%;top:63.4%;position: absolute;background-image: url(../images/dingshen.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
 .laba{width: 8.5%;right: 2.6%;top:2.3%;position: absolute;background-image: url(../images/laba_close.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
 .map_open{width: 8.5%;left: 2.6%;top:2.3%;position: absolute;background-image: url(../images/juanzhou.png);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
-.layer_map{width: 100%;height: 100%;position: absolute;top: 0;left: 0;background-color: rgba(0,0,0,.7);display: none;}
+.layer_map{width: 100%;height: 100%;position: absolute;left: 0;top: 0;background-color: rgba(0,0,0,.7);z-index: 100;}
 .juanzhou_text{position: fixed;display: block;left: 50%;width: 95%;top: 50%;-webkit-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%);transform: translate(-50%,-50%);}
 /*===================hanchao=======================*/
 .back_top{width: 100%;height: 55%;background-image: url(../images/hanchao_top_back.gif);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
@@ -20,12 +20,12 @@ body,html{height: 100%;background-color: #FCFCF3}
 .hanchao_layer{position: absolute;right: 8%;top: 12%;width: 20%;display: none;}
 /*===================weijing=======================*/
 .wj_title{width:40%;position: absolute;left: 50%;top: 10%;-webkit-transform: translate(-50%,0);-ms-transform: translate(-50%,0);-o-transform: translate(-50%,0);transform: translate(-50%,0);margin-bottom: 35px;}
-.back_top_wj{width: 100%;height: 55%;background-image: url(../images/weijin_top_back.gif);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
+.back_top_wj{width: 100%;height: 55%;background-image: url(../images/mq_top_back.gif);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
 .left_button{position: absolute;bottom: 5%;left: 5%;width: 10%;}
 .right_button{position: absolute;bottom: 5%;right: 5%;width: 10%;}
 .bottom_button{position: absolute;bottom: 5%;right: 45%;width: 10%;}
 /*===================mingqing=======================*/
-.back_top_mq{width: 100%;height: 55%;background-image: url(../images/mq_top_back.gif);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
+.back_top_mq{width: 100%;height: 55%;background-image: url(../images/weijin_top_back.gif);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}
 .mq_title{width:30%;position: absolute;left: 50%;top: 10%;-webkit-transform: translate(-50%,0);-ms-transform: translate(-50%,0);-o-transform: translate(-50%,0);transform: translate(-50%,0);margin-bottom: 35px;}
 /*===================song=======================*/
 .back_top_song{width: 100%;height: 55%;background-image: url(../images/song_top_back.gif);background-size: 100% 100%;background-repeat: no-repeat;background-position: 0% 0%;}

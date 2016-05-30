@@ -23,9 +23,13 @@
 	<img src="./images/logo_text.png" alt="" class="logo_text">
 </div>
 <script type="text/javascript">
-	$(".allcontain").click(function(event) {
+	// $(".allcontain").click(function(event) {
+	// 	window.location.href="all.html";
+	// });
+	$(".allcontain").fadeOut(3000);
+	var x=setTimeout(function(){
 		window.location.href="all.html";
-	});
+	},3000);
 </script>
 </body>
 </html>

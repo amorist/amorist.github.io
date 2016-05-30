@@ -5,10 +5,10 @@ $(function(){
 			}
 			init();
 			$(".map_open").click(function(){
-				$(".layer_map").show(1000);
+				$(".layer_map").fadeIn();
 			});
 			$(".layer_map").click(function(){
-				$(this).hide(1000);	
+				$(this).fadeOut();
 			})
 			$(".pedal_to_sit").click(function(){
 				window.location.href="hanchao.html";
