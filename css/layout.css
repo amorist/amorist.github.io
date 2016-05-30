@@ -40,7 +40,7 @@ body,html{height: 100%;background-color: #FCFCF3}
 .bottom_contain_gm .tt_gm{width: 17%;top: 55%;}
 .text1_gm{position: absolute;display: block;right: 10%;top: 30%;width: 4%;}
 .text2_gm{position: absolute;display: block;right: 18%;top: 30%;width: 4%;}
-.text3_gm{position: absolute;display: block;right: 26%;top: 30%;width: 16%;}
+.text3_gm{position: absolute;display: block;right: 26%;top: 30%;width: 20%;}
 .top_contain_gm{position: relative;width: 100%;height: 63%;background-image: url(../images/gm_top.gif);background-size: 100% 84%;background-repeat: no-repeat;background-position: 0% 100%;}
 .bottom_contain_gm{width: 100%;height: 37%;position: relative;}
 .kaobenban{width: 30%;height: 40%;z-index: 100;position: absolute;left: 50%;top: 10%;-webkit-transform: translate(-50%,0);-ms-transform: translate(-50%,0);-o-transform: translate(-50%,0);transform: translate(-50%,0);}
